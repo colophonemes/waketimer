@@ -17,7 +17,7 @@
     "start": "node ./server"
   },
   "bin": {
-    "waketimer": "./server/cli.js"
+    "waketimer": "./cli.js"
   },
   "author": "Sam Deere <dev@colophonemes.com>",
   "license": "ISC"
