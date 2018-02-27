@@ -2,6 +2,7 @@
   "dependencies": {
     "@std/esm": "^0.23.1",
     "better-console": "^1.0.1",
+    "commander": "^2.14.1",
     "dnode": "^1.2.2",
     "dnode-promise": "^3.0.1",
     "node-timers": "^0.0.2"

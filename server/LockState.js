@@ -3,7 +3,7 @@ const console = require('better-console')
 const Timers = require('node-timers')
 
 // globals
-const DEFAULT_POLL_INTERVAL_SECONDS = 10
+const DEFAULT_POLL_INTERVAL_SECONDS = 5
 const defaults = {pollInterval: DEFAULT_POLL_INTERVAL_SECONDS}
 
 function LockState ({pollInterval} = defaults) {
