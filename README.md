@@ -5,7 +5,7 @@ Figure out how long your screen has been locked/unlocked.
 
 ## Rationale
 
-I often work long hours, and I'd like to set reminders based on how long the 
+I often work long hours, and I'd like to set reminders based on how long the
 
 ## Usage
 
