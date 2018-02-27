@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "@std/esm": "^0.23.1",
+    "better-console": "^1.0.1",
+    "dnode": "^1.2.2",
+    "dnode-promise": "^3.0.1",
+    "node-timers": "^0.0.2"
+  },
+  "name": "waketimer",
+  "version": "1.0.0",
+  "description": "Find out how long it's been since the screen unlocked",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server"
+  },
+  "bin": {
+    "waketimer": "./server/cli.js"
+  },
+  "author": "Sam Deere <dev@colophonemes.com>",
+  "license": "ISC"
+}
