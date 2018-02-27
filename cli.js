@@ -38,9 +38,13 @@ program
 program.parse(process.argv)
 
 async function run (command) {
+  if (!command.lockscript && !command.unlockscript) {
+    console.error('No lock or unlock script supplied')
+    process.exit(1)
+  }
   // start the server as a background process if needed
-  // this will error and fail to start if the server is already running
-
+  // this will silently error if the server is already running
+  await start()
   // connect to the server
   const remote = await connection()
   const events = new EventEmitter()
@@ -90,7 +94,6 @@ async function kill () {
 }
 
 function start () {
-  console.info('starting waketimer')
   spawn('node', ['./server'], {
     detached: true,
     stdio: 'ignore'
